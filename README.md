@@ -27,6 +27,32 @@ npm install electron-builder -D
 }
 ```
 
+## 打包配置项
+``` javascript
+"build": {
+    "appId": "xxxholic",
+    "productName": "xxxholic",
+    "directories": {
+      "output": "release"
+    },
+    "win": {
+      "artifactName": "${productName}_setup_${version}.${ext}",
+      "icon": "logo.ico",
+      "target": [
+        "target": "nsis",
+        "arch": [
+          "x64"
+        ]
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+```
+
 ## 完整配置文件
 ``` javascript
 {
