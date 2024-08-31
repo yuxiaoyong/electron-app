@@ -2,16 +2,22 @@
 Control + Shift + I
 
 ## 创建项目
+``` cmd
 mkdir my-electron-app && cd my-electron-app
 npm init
+```
 
 ## 下载依赖
+``` cmd
 npm install electron -D
+```
 
 ## 编写相关代码，如本示例
 
 ## 下载打包工具
+``` cmd
 npm install electron-builder -D
+```
 
 ## 添加相关命令
 ``` javascript
