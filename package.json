@@ -22,7 +22,15 @@
     "nsis": {
       "oneClick": false,
       "perMachine": true,
-      "allowToChangeInstallationDirectory": true
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "installerIcon": "./build/icons/aaa.ico",
+      "uninstallerIcon": "./build/icons/bbb.ico",
+      "installerHeaderIcon": "./build/icons/aaa.ico",
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "xxxx",
+      "include": "build/script/installer.nsh"
     }
   },
   "author": "",
